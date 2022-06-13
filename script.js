@@ -11,7 +11,7 @@ function criarPersonagem() {
   const poder = poderInput.value;
   const nacionalidade = nacionalidadeInput.value;
 
-  personagensCriados.push([nome, identidadeSecreta, poder, nacionalidade]);
+  personagensCriados.push({ nome, identidadeSecreta, poder, nacionalidade });
 
   renderizarPersonagens();
 }
@@ -25,10 +25,10 @@ function renderizarPersonagens() {
 
     const li = `
       <li>
-        Nome: ${personagem[0]}<br>
-        Identidade secreta: ${personagem[1]}<br>
-        Poder: ${personagem[2]}<br>
-        Nacionalidade: ${personagem[3]}<br><br>
+        Nome: ${personagem.nome}<br>
+        Identidade secreta: ${personagem.identidadeSecreta}<br>
+        Poder: ${personagem.poder}<br>
+        Nacionalidade: ${personagem.nacionalidade}<br><br>
       </li>
     `;
 
