@@ -1,4 +1,4 @@
-const personagensCriados = [];
+let personagensCriados = [];
 
 function criarPersonagem() {
   const nomeInput = document.querySelector(".codinome");
